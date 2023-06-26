@@ -30,7 +30,8 @@ def start( client : socket.socket , ip : tuple ) :
     except :
         pass
 
-tcp_socket = socket.socket( socket.AF_INET , socket.SOCK_STREAM )
+tcp_socket = socket.socket( socket.AF_INET6 )
+tcp_socket.setsockopt( socket.IPPROTO_IPV6 , socket.IPV6_V6ONLY , 0 )
 tcp_socket.bind( ( "" , port ) )
 tcp_socket.listen( 8 )
 
@@ -43,8 +44,7 @@ main.daemon = True
 main.start()
 print( f"http://127.0.0.1:{ port }" )
 
-while 1 :
-    try :
-        input()
-    except :
-        break
+try :
+    input()
+except :
+    pass
