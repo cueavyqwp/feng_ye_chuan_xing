@@ -7060,7 +7060,7 @@
                         mode: "closed"
                     })
                         , s = document.createElement("style");
-                    s.textContent = `\n    canvas {\n      width: 100%;\n      height: ${i}px;\n      position: absolute;\n      top: 0;\n      left: 0;\n      cursor: 'default';\n    }\n    .full {\n      position: absolute;\n      width: 100%;\n      height: 100%;\n      top: 0;\n      left: 0;\n      image-rendering: pixelated;\n    }\n    .content-bubble {\n      position: absolute;\n      width: 650px;\n      height: 314px;\n      top: 24px;\n      left: 634px;\n      background: url(${n.fF ? "guide/bubble.png" : "./img/guide/bubble.png"});\n    }\n    .option-bubble {\n      width: 220px;\n      height: 80px;\n      background: url(${n.fF ? "/guide/bubble_option.png" : "./img/guide/bubble_option.png"});\n      cursor: pointer;\n      text-align: center;\n      font-size: 24px;\n      line-height: 24px;\n      color: rgb(89, 164, 87);\n      box-sizing: border-box;\n      padding-top: 28px;\n      padding-right: 28px;\n      transition: 0.3s\n    }\n    .option-bubble:hover {\n      transform: translateY(-5px);\n    }\n    .end-content-left {\n      position: absolute;\n      width: 220px;\n      height: 160px;\n      top: 80px;\n      left: 70px;\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n      box-sizing: border-box;\n      padding-left: 20px;\n    }\n    .end-content-right {\n      position: absolute;\n      width: 220px;\n      height: 160px;\n      top: 80px;\n      left: 310px;\n      font-size: 24px;\n      color: rgb(116, 167, 166);\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n    }\n    .end-content-right span {\n      color: #a4d341;\n      letter-spacing: -3px;\n      margin-right: 3px;\n    }\n    .end-option-icon {\n      position: absolute;\n      width: 36px;\n      height: 36px;\n      top: 20px;\n      left: 160px;\n      background-size: 100%;\n      background-repeat: no-repeat;\n      background-position: center;\n    }\n\n    .score {\n      position: absolute;\n      color: #fff;\n      top: 48px;\n      right: 24px;\n      text-shadow: 3px 3px #000;\n      display: flex;\n      align-items: center;\n      justify-content: flex-end;\n      width: 240px;\n      height: 32px;\n      transform: scale(1.5);\n      transform-origin: right;\n    }\n    .number {\n      width: 24px;\n      height: 32px;\n      background-image: url(./img/imgguide/background-image.png);\n      background-repeat: no-repeat;\n      background-size: 240px 32px;\n      image-rendering: pixelated;\n    }\n  `,
+                    s.textContent = `\n    canvas {\n      width: 100%;\n      height: ${i}px;\n      position: absolute;\n      top: 0;\n      left: 0;\n      cursor: 'default';\n    }\n    .full {\n      position: absolute;\n      width: 100%;\n      height: 100%;\n      top: 0;\n      left: 0;\n      image-rendering: pixelated;\n    }\n    .content-bubble {\n      position: absolute;\n      width: 650px;\n      height: 314px;\n      top: 24px;\n      left: 634px;\n      background: url(${n.fF ? "guide/bubble.png" : "./assets/guide/bubble.png"});\n    }\n    .option-bubble {\n      width: 220px;\n      height: 80px;\n      background: url(${n.fF ? "/guide/bubble_option.png" : "./assets/guide/bubble_option.png"});\n      cursor: pointer;\n      text-align: center;\n      font-size: 24px;\n      line-height: 24px;\n      color: rgb(89, 164, 87);\n      box-sizing: border-box;\n      padding-top: 28px;\n      padding-right: 28px;\n      transition: 0.3s\n    }\n    .option-bubble:hover {\n      transform: translateY(-5px);\n    }\n    .end-content-left {\n      position: absolute;\n      width: 220px;\n      height: 160px;\n      top: 80px;\n      left: 70px;\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n      box-sizing: border-box;\n      padding-left: 20px;\n    }\n    .end-content-right {\n      position: absolute;\n      width: 220px;\n      height: 160px;\n      top: 80px;\n      left: 310px;\n      font-size: 24px;\n      color: rgb(116, 167, 166);\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n    }\n    .end-content-right span {\n      color: #a4d341;\n      letter-spacing: -3px;\n      margin-right: 3px;\n    }\n    .end-option-icon {\n      position: absolute;\n      width: 36px;\n      height: 36px;\n      top: 20px;\n      left: 160px;\n      background-size: 100%;\n      background-repeat: no-repeat;\n      background-position: center;\n    }\n\n    .score {\n      position: absolute;\n      color: #fff;\n      top: 48px;\n      right: 24px;\n      text-shadow: 3px 3px #000;\n      display: flex;\n      align-items: center;\n      justify-content: flex-end;\n      width: 240px;\n      height: 32px;\n      transform: scale(1.5);\n      transform-origin: right;\n    }\n    .number {\n      width: 24px;\n      height: 32px;\n      background-image: url(./assets/imgguide/background-image.png);\n      background-repeat: no-repeat;\n      background-size: 240px 32px;\n      image-rendering: pixelated;\n    }\n  `,
                         r.appendChild(s);
                     const a = document.createElement("canvas");
                     a.width = 1920,
@@ -7073,7 +7073,7 @@
                             display: "none",
                             opacity: "0",
                             transition: "opacity 0.5s",
-                            backgroundImage: `url(${n.fF ? "/guide/end_cover.png" : "./img/guide/end_cover.png"})`,
+                            backgroundImage: `url(${n.fF ? "/guide/end_cover.png" : "./assets/guide/end_cover.png"})`,
                             backgroundSize: "cover",
                             backgroundRepeat: "no-repeat"
                         });
@@ -7148,7 +7148,7 @@
                     }, {
                         y: 169,
                         text: "回看教程",
-                        icon: n.fF ? "/guide/book.png" : "./img/guide/book.png"
+                        icon: n.fF ? "/guide/book.png" : "./assets/guide/book.png"
                     }].map(((e, t) => {
                         const i = document.createElement("div");
                         if (i.classList.add("option-bubble"),
@@ -7271,7 +7271,7 @@
                 }
                 , d = {
                     "/VonwaonBitmap-12px.woff2": {
-                        src: r ? "/VonwaonBitmap-12px.woff2" : "./font/VonwaonBitmap-12px.woff2",
+                        src: r ? "/VonwaonBitmap-12px.woff2" : "./assets/font/VonwaonBitmap-12px.woff2",
                         type: "font",
                         options: {
                             name: "Vonwaon"
@@ -7279,49 +7279,49 @@
                     }
                 }
                 , u = {
-                    "/sprite/background/sky.png": "./img/sprite/background/sky.png",
-                    "/sprite/background/clouds.png": "./img/sprite/background/clouds.png",
-                    "/sprite/background/mountain.png": "./img/sprite/background/mountain.png",
-                    "/sprite/background/near.png": "./img/sprite/background/near.png",
-                    "/sprite/background/space.png": "./img/sprite/background/space.png",
-                    "/sprite/leaves/leaves1.png": "./img/sprite/leaves/leaves1.png",
-                    "/sprite/leaves/leaves2.png": "./img/sprite/leaves/leaves2.png",
-                    "/sprite/leaves/leaves3.png": "./img/sprite/leaves/leaves3.png",
-                    "/sprite/leaves/leaves4.png": "./img/sprite/leaves/leaves4.png",
-                    "/sprite/22.png": "./img/sprite/22.png",
-                    "/sprite/33.png": "./img/sprite/33.png",
-                    "/sprite/shamrocks/shamrock1.png": "./img/sprite/shamrocks/shamrock1.png",
-                    "/sprite/shamrocks/shamrock2.png": "./img/sprite/shamrocks/shamrock2.png",
-                    "/sprite/shamrocks/shamrock3.png": "./img/sprite/shamrocks/shamrock3.png",
-                    "/sprite/shamrocks/shamrock4.png": "./img/sprite/shamrocks/shamrock4.png",
-                    "/sprite/shamrocks/shamrock_trap.png": "./img/sprite/shamrocks/shamrock_trap.png",
-                    "/sprite/shamrocks/shamrock_lucky.png": "./img/sprite/shamrocks/shamrock_lucky.png",
-                    "/sprite/wind/wind1.png": "./img/sprite/wind/wind1.png",
-                    "/sprite/wind/wind2.png": "./img/sprite/wind/wind2.png",
-                    "/sprite/wind/wind3.png": "./img/sprite/wind/wind3.png",
-                    "/sprite/wind/wind4.png": "./img/sprite/wind/wind4.png",
-                    "/sprite/bird/bird.png": "./img/sprite/bird/bird.png",
-                    "/sprite/bird/numbers.png": "./img/sprite/bird/numbers.png",
-                    "/sprite/bird/numbers2.png": "./img/sprite/bird/numbers2.png",
-                    "/sprite/count.png": "./img/sprite/count.png",
-                    "/guide/bubble.png": "./img/guide/bubble.png",
-                    "/guide/end_cover.png": "./img/guide/end_cover.png"
+                    "/sprite/background/sky.png": "./assets/sprite/background/sky.png",
+                    "/sprite/background/clouds.png": "./assets/sprite/background/clouds.png",
+                    "/sprite/background/mountain.png": "./assets/sprite/background/mountain.png",
+                    "/sprite/background/near.png": "./assets/sprite/background/near.png",
+                    "/sprite/background/space.png": "./assets/sprite/background/space.png",
+                    "/sprite/leaves/leaves1.png": "./assets/sprite/leaves/leaves1.png",
+                    "/sprite/leaves/leaves2.png": "./assets/sprite/leaves/leaves2.png",
+                    "/sprite/leaves/leaves3.png": "./assets/sprite/leaves/leaves3.png",
+                    "/sprite/leaves/leaves4.png": "./assets/sprite/leaves/leaves4.png",
+                    "/sprite/22.png": "./assets/sprite/22.png",
+                    "/sprite/33.png": "./assets/sprite/33.png",
+                    "/sprite/shamrocks/shamrock1.png": "./assets/sprite/shamrocks/shamrock1.png",
+                    "/sprite/shamrocks/shamrock2.png": "./assets/sprite/shamrocks/shamrock2.png",
+                    "/sprite/shamrocks/shamrock3.png": "./assets/sprite/shamrocks/shamrock3.png",
+                    "/sprite/shamrocks/shamrock4.png": "./assets/sprite/shamrocks/shamrock4.png",
+                    "/sprite/shamrocks/shamrock_trap.png": "./assets/sprite/shamrocks/shamrock_trap.png",
+                    "/sprite/shamrocks/shamrock_lucky.png": "./assets/sprite/shamrocks/shamrock_lucky.png",
+                    "/sprite/wind/wind1.png": "./assets/sprite/wind/wind1.png",
+                    "/sprite/wind/wind2.png": "./assets/sprite/wind/wind2.png",
+                    "/sprite/wind/wind3.png": "./assets/sprite/wind/wind3.png",
+                    "/sprite/wind/wind4.png": "./assets/sprite/wind/wind4.png",
+                    "/sprite/bird/bird.png": "./assets/sprite/bird/bird.png",
+                    "/sprite/bird/numbers.png": "./assets/sprite/bird/numbers.png",
+                    "/sprite/bird/numbers2.png": "./assets/sprite/bird/numbers2.png",
+                    "/sprite/count.png": "./assets/sprite/count.png",
+                    "/guide/bubble.png": "./assets/guide/bubble.png",
+                    "/guide/end_cover.png": "./assets/guide/end_cover.png"
                 }
                 , p = {
-                    "/sprite/22.json": "https://activity.hdslb.com/blackboard/static/20220308/00979505aec5edd6e5c2f8c096fa0f62/mhFnJ3WgCI.json",
-                    "/sprite/33.json": "https://activity.hdslb.com/blackboard/static/20220304/00979505aec5edd6e5c2f8c096fa0f62/bZ70VoHTmH.json",
-                    "/sprite/shamrocks/shamrock1.json": "https://activity.hdslb.com/blackboard/static/20220225/00979505aec5edd6e5c2f8c096fa0f62/vQOKaRcQiQ.json",
-                    "/sprite/shamrocks/shamrock2.json": "https://activity.hdslb.com/blackboard/static/20220225/00979505aec5edd6e5c2f8c096fa0f62/KKLdKJ60Tm.json",
-                    "/sprite/shamrocks/shamrock3.json": "https://activity.hdslb.com/blackboard/static/20220225/00979505aec5edd6e5c2f8c096fa0f62/ECCbC7xZCf.json",
-                    "/sprite/shamrocks/shamrock4.json": "https://activity.hdslb.com/blackboard/static/20220225/00979505aec5edd6e5c2f8c096fa0f62/jHhlzBK8lT.json",
-                    "/sprite/shamrocks/shamrock_trap.json": "https://activity.hdslb.com/blackboard/static/20220303/00979505aec5edd6e5c2f8c096fa0f62/ekSXHfFK0Q.json",
-                    "/sprite/shamrocks/shamrock_lucky.json": "https://activity.hdslb.com/blackboard/static/20220303/00979505aec5edd6e5c2f8c096fa0f62/jNCwVQWxuT.json",
-                    "/sprite/wind/wind1.json": "https://activity.hdslb.com/blackboard/static/20220303/00979505aec5edd6e5c2f8c096fa0f62/RIfIuimWkU.json",
-                    "/sprite/wind/wind2.json": "https://activity.hdslb.com/blackboard/static/20220303/00979505aec5edd6e5c2f8c096fa0f62/IHWo3trIPV.json",
-                    "/sprite/wind/wind3.json": "https://activity.hdslb.com/blackboard/static/20220303/00979505aec5edd6e5c2f8c096fa0f62/2pqUgkNUXm.json",
-                    "/sprite/wind/wind4.json": "https://activity.hdslb.com/blackboard/static/20220303/00979505aec5edd6e5c2f8c096fa0f62/ro0B1H3Ov8.json",
-                    "/sprite/bird/bird.json": "https://activity.hdslb.com/blackboard/static/20220316/00979505aec5edd6e5c2f8c096fa0f62/VKYQz9AWcj.json",
-                    "/sprite/count.json": "https://activity.hdslb.com/blackboard/static/20220323/00979505aec5edd6e5c2f8c096fa0f62/QUgV5pcBul.json"
+                    "/sprite/22.json": "./assets/sprite/22.json",
+                    "/sprite/33.json": "./assets/sprite/33.json",
+                    "/sprite/shamrocks/shamrock1.json": "./assets/sprite/shamrocks/shamrock1.json",
+                    "/sprite/shamrocks/shamrock2.json": "./assets/sprite/shamrocks/shamrock2.json",
+                    "/sprite/shamrocks/shamrock3.json": "./assets/sprite/shamrocks/shamrock3.json",
+                    "/sprite/shamrocks/shamrock4.json": "./assets/sprite/shamrocks/shamrock4.json",
+                    "/sprite/shamrocks/shamrock_trap.json": "./assets/sprite/shamrocks/shamrock_trap.json",
+                    "/sprite/shamrocks/shamrock_lucky.json": "./assets/sprite/shamrocks/shamrock_lucky.json",
+                    "/sprite/wind/wind1.json": "./assets/sprite/wind/wind1.json",
+                    "/sprite/wind/wind2.json": "./assets/sprite/wind/wind2.json",
+                    "/sprite/wind/wind3.json": "./assets/sprite/wind/wind3.json",
+                    "/sprite/wind/wind4.json": "./assets/sprite/wind/wind4.json",
+                    "/sprite/bird/bird.json": "./assets/sprite/bird/bird.json",
+                    "/sprite/count.json": "./assets/sprite/count.json"
                 }
                 , h = (() => {
                     try {
@@ -7656,29 +7656,29 @@
             });
             var n = i(6010);
             const o = n.fF ? new Array(10).fill(0).map(((e, t) => ({
-                c: `./img/guide/guides/guide${t + 1}.png`
+                c: `./assets/guide/guides/guide${t + 1}.png`
             }))) : [{
-                c: "./img/guide/guides/guide0.png"
+                c: "./assets/guide/guides/guide0.png"
             }, {
-                c: "./img/guide/guides/guide1.png"
+                c: "./assets/guide/guides/guide1.png"
             }, {
-                c: "./img/guide/guides/guide2.png"
+                c: "./assets/guide/guides/guide2.png"
             }, {
-                c: "./img/guide/guides/guide3.png"
+                c: "./assets/guide/guides/guide3.png"
             }, {
-                c: "./img/guide/guides/guide4.png"
+                c: "./assets/guide/guides/guide4.png"
             }, {
-                c: "./img/guide/guides/guide5.png"
+                c: "./assets/guide/guides/guide5.png"
             }, {
-                c: "./img/guide/guides/guide6.png"
+                c: "./assets/guide/guides/guide6.png"
             }, {
-                c: "./img/guide/guides/guide7.png"
+                c: "./assets/guide/guides/guide7.png"
             }, {
-                c: "./img/guide/guides/guide8.png"
+                c: "./assets/guide/guides/guide8.png"
             }, {
-                c: "./img/guide/guides/guide9.png"
+                c: "./assets/guide/guides/guide9.png"
             }, {
-                c: "./img/guide/guides/guide10.png"
+                c: "./assets/guide/guides/guide10.png"
             }]
                 , r = (e, t, i, r = !1) => {
                     let s = 0;
@@ -7702,7 +7702,7 @@
                             transform: `scale(${t || 1})`
                         });
                     const c = document.createElement("style");
-                    c.textContent = `\n  .guide-close {\n    position: absolute;\n    width: 58px;\n    height: 58px;\n    top: 28px;\n    left: 1132px;\n    cursor: pointer;\n    background: url(${n.fF ? "/guide/x.png" : "./img/guide/x.png"});\n  }\n  .guide-arrow {\n    position: absolute;\n    width: 40px;\n    height: 30px;\n    top: 24px;\n    left: 160px;\n    background: url(${n.fF ? "/guide/arrow.png" : "./img/guide/arrow.png"});\n  }\n  @keyframes arrow_floating {\n    from { transform: translateX(0px); }\n    to   { transform: translateX(5px); }\n  }\n  @keyframes arrow_floating_r {\n    from { transform: scaleX(-1) translateX(0px); }\n    to   { transform: scaleX(-1) translateX(-5px); }\n  }\n  `,
+                    c.textContent = `\n  .guide-close {\n    position: absolute;\n    width: 58px;\n    height: 58px;\n    top: 28px;\n    left: 1132px;\n    cursor: pointer;\n    background: url(${n.fF ? "/guide/x.png" : "./assets/guide/x.png"});\n  }\n  .guide-arrow {\n    position: absolute;\n    width: 40px;\n    height: 30px;\n    top: 24px;\n    left: 160px;\n    background: url(${n.fF ? "/guide/arrow.png" : "./assets/guide/arrow.png"});\n  }\n  @keyframes arrow_floating {\n    from { transform: translateX(0px); }\n    to   { transform: translateX(5px); }\n  }\n  @keyframes arrow_floating_r {\n    from { transform: scaleX(-1) translateX(0px); }\n    to   { transform: scaleX(-1) translateX(-5px); }\n  }\n  `,
                         l.appendChild(c);
                     const d = document.createElement("div");
                     d.classList.add("content-bubble"),
@@ -8603,7 +8603,7 @@
                     i
             }
                 , l = async () => {
-                    await Promise.all([a("FZLanTYJW", s.fF ? "/FZLanTYJW.ttf" : "./font/FZLanTYJW.ttf"), a("HighPixel7", s.fF ? "/HighPixel7-08jv.ttf" : "./font/HighPixel7-08jv.ttf")]),
+                    await Promise.all([a("FZLanTYJW", s.fF ? "/FZLanTYJW.ttf" : "./assets/font/FZLanTYJW.ttf"), a("HighPixel7", s.fF ? "/HighPixel7-08jv.ttf" : "./assets/font/HighPixel7-08jv.ttf")]),
                         c = !0
                 }
                 ;
@@ -8637,30 +8637,6 @@
                     ))
             }
             const s = e => e[0] + Math.random() * (e[1] - e[0])
-                , a = e => {
-                    const t = {
-                        "x-icon": "ico",
-                        jpeg: "jpg",
-                        "x-portable-bitmap": "bmp",
-                        pict: "pic",
-                        "x-macpaint": "pnt",
-                        "x-portable-pixmap": "ppm",
-                        "x-rgb": "rgb",
-                        "svg+xml": "svg"
-                    }
-                        , i = new FormData
-                        , n = document.cookie.split(";").map((e => e.trim())).find((e => 0 === e.indexOf("bili_jct=")))?.replace("bili_jct=", "");
-                    return i.append("csrf", n || ""),
-                        i.append("bucket", "active"),
-                        i.append("file", e, "UPLOAD_IMG_" + +new Date + "." + (e => {
-                            const i = e.replace("image/", "");
-                            return t[i] || i
-                        }
-                        )(e.type)),
-                        o().post("//api.bilibili.com/x/upload/web/image", i, {
-                            withCredentials: !0
-                        }).then((e => e.data?.data))
-                }
                 , l = (e = {}, t = {}) => {
                     const i = e.spm_id || document.getElementsByTagName("meta").spm_prefix?.content || "0.0"
                         , n = e.c || e.CBlock
