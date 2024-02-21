@@ -14,7 +14,7 @@ except :
 
 os.chdir( os.path.split( __file__ )[ 0 ] )
 
-def start( client : socket.socket , ip : tuple ) :
+def start( client : socket.socket , ip : tuple[ str , int ] ) :
     try :
         request = client.recv( 1024 ).decode().splitlines()
         client.send( "HTTP/1.1 200 OK\r\n\r\n".encode() )
