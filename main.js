@@ -7142,11 +7142,11 @@
                         ;
                     d.appendChild(m);
                     const A = [{
-                        y: 74,
+                        y: 158,
                         text: '再来！(<span style="color:#a4d341;">按Z</span>)',
                         icon: ""
                     }, {
-                        y: 169,
+                        y: 245,
                         text: "回看教程",
                         icon: n.fF ? "/guide/book.png" : "./assets/guide/book.png"
                     }].map(((e, t) => {
@@ -7693,7 +7693,7 @@
                     l.classList.add("guide-container"),
                         Object.assign(l.style, {
                             position: "absolute",
-                            width: "1920px",
+                            width: "2000px",
                             height: "360px",
                             top: "0",
                             left: "0",
@@ -7702,7 +7702,7 @@
                             transform: `scale(${t || 1})`
                         });
                     const c = document.createElement("style");
-                    c.textContent = `\n  .guide-close {\n    position: absolute;\n    width: 58px;\n    height: 58px;\n    top: 28px;\n    left: 1132px;\n    cursor: pointer;\n    background: url(${n.fF ? "/guide/x.png" : "./assets/guide/x.png"});\n  }\n  .guide-arrow {\n    position: absolute;\n    width: 40px;\n    height: 30px;\n    top: 24px;\n    left: 160px;\n    background: url(${n.fF ? "/guide/arrow.png" : "./assets/guide/arrow.png"});\n  }\n  @keyframes arrow_floating {\n    from { transform: translateX(0px); }\n    to   { transform: translateX(5px); }\n  }\n  @keyframes arrow_floating_r {\n    from { transform: scaleX(-1) translateX(0px); }\n    to   { transform: scaleX(-1) translateX(-5px); }\n  }\n  `,
+                    c.textContent = `\n  .guide-close {\n    position: absolute;\n    width: 58px;\n    height: 58px;\n    top: 28px;\n    left: 1145px;\n    cursor: pointer;\n    background: url(${n.fF ? "/guide/x.png" : "./assets/guide/x.png"});\n  }\n  .guide-arrow {\n    position: absolute;\n    width: 40px;\n    height: 30px;\n    top: 24px;\n    left: 160px;\n    background: url(${n.fF ? "/guide/arrow.png" : "./assets/guide/arrow.png"});\n  }\n  @keyframes arrow_floating {\n    from { transform: translateX(0px); }\n    to   { transform: translateX(5px); }\n  }\n  @keyframes arrow_floating_r {\n    from { transform: scaleX(-1) translateX(0px); }\n    to   { transform: scaleX(-1) translateX(-5px); }\n  }\n  `,
                         l.appendChild(c);
                     const d = document.createElement("div");
                     d.classList.add("content-bubble"),
